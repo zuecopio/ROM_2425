@@ -1,16 +1,27 @@
 # Proyecto de Robótica móvil
 
-## Descripcción?
+## Descripción
 
-## Objetivos?
+Este proyecto de robótica móvil tiene como objetivo desarrollar un sistema autónomo capaz de navegar y realizar tareas específicas en un entorno simulado utilizando ROS 2 y CoppeliaSim. El robot será capaz de cartografiar su entorno, planificar rutas y ejecutar órdenes de navegación para recoger y entregar objetos.
+
+## Objetivos
+
+- Desarrollar un sistema de navegación autónoma para un robot móvil.
+- Implementar la cartografía y localización del entorno utilizando ROS 2.
+- Integrar el simulador CoppeliaSim para pruebas y validación.
+- Crear un sistema de teleoperación para el control manual del robot.
+- Desarrollar un sistema de planificación de rutas y ejecución de órdenes.
 
 ## Requisitos
 
-Blabla
+- ROS 2 Humble
+- CoppeliaSim Edu V4.9.0
+- TurtleBot3
+- Ubuntu 22.04
 
 ### ¿Cómo instalar CoppeliaSim?
 
-Blabla
+Para instalar CoppeliaSim, sigue estos pasos:
 
 ```bash
 cd /home/alumno.upv.es.TU_USUARIO/non-snap/CoppeliaSim
@@ -22,7 +33,7 @@ rm CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04.tar.xz
 
 ### Para añadir en el .bashrc
 
-Blabla
+Añade las siguientes líneas a tu archivo `.bashrc` para configurar el entorno:
 
 ```sh
 # >>> ROS 2 Humble >>>
@@ -45,41 +56,43 @@ export PATH=$PATH:~/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04
 
 ## ¿Cómo ejecutar el programa?
 
-Blabla
-
 ### Paso 1. Cartografiar en escenario
 
-Blabla
+#### Terminal 1
 
-#### Terminal 1: Lanzar paquetes para cartografiar
-
-Blabla
+Lanzar paquetes para cartografiar
 
 ```bash
 ros2 launch little_warehouse cartographer.launch.py resolution:=0.001
 ```
 
-#### Terminal 2: Lanzar nodo teleoperador para moverse por el entorno
+*Captura de pantalla*
 
-Blabla
+#### Terminal 2
+
+Lanzar nodo teleoperador para moverse por el entorno
 
 ```bash
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
-#### Terminal 3: Generar un mapa .pmg de lo que se ha cartografiado
+*Captura de pantalla*
 
-Blabla
+#### Terminal 3
+
+Generar un mapa `.pgm` de lo que se ha cartografiado
 
 ```bash
 ros2 run nav2_map_server map_saver_cli -f ./little_warehouse_map
 ```
 
+*Captura de pantalla*
+
 ### Paso 2. Ejecutar programa principal?
 
-Blabla
+Asegúrate de que no tienes en ejecución ningún proceso de los que lanzamos anteriormente, y en una terminal ejecuta primeramente el simulador:
 
-#### Terminal 1: 
+#### Terminal 1
 
 Nos aseguramos de que no tenemos en ejecución ningún proceso de los que lanzamos anteriormente, y en una terminal ejecutamos primeramente el simulador:
 
@@ -87,15 +100,19 @@ Nos aseguramos de que no tenemos en ejecución ningún proceso de los que lanzam
 ros2 launch little_warehouse coppeliasim_no_rviz2.launch.py
 ```
 
-#### Terminal 2:
+*Captura de pantalla*
 
-Lanzamos el fichero launch del limitador de velocidad:
+#### Terminal 2
+
+Lanza el fichero launch del limitador de velocidad:
 
 ```bash
 ros2 launch little_warehouse speed_limit.launch.py params_file:=./param/speed_params.yaml mask:=./maps/speed_mask_coppeliasim_map.yaml
 ```
 
-#### Terminal 3:
+*Captura de pantalla*
+
+#### Terminal 3
 
 Ahora debemos lanzar el launch de navegación:
 
@@ -103,27 +120,31 @@ Ahora debemos lanzar el launch de navegación:
 ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/coppeliasim_map.yaml params_file:=./param/nav2_params_speed_limit.yaml
 ```
 
-#### Terminal 4:
+*Captura de pantalla*
 
-Por último se lanza el nodo que enviará al robot la posiciones por donde debe pasar para recoger los elementos entre las estanterías:
+#### Terminal 4
+
+Por último, lanza el nodo que enviará al robot las posiciones por donde debe pasar para recoger los elementos entre las estanterías:
 
 ```bash
 ros2 run little_warehouse navigation
 ```
 
-Otra forma de lanzar este nodo es especificando que orden se quiere realizar:
+Otra forma de lanzar este nodo es especificando qué orden se quiere realizar:
 
 ```bash
 ros2 run little_warehouse navigation --ros-args -p order:="friday"
 ```
 
-El argumento order puede ser: "monday, tuesday, wensday, thursday, friday, saturday, sunday"
+El argumento order puede ser: "monday, tuesday, wednesday, thursday, friday, saturday, sunday".
+
+*Captura de pantalla*
 
 ## Licencia
 
-Blabla
+Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
 
 ## Agradecimientos
 
-Blabla (a nuestros profes de Robótica Móvil: Leopoldo Armesto y  Ricardo Nuñez)
+Agradecemos a nuestros profesores de Robótica Móvil: Leopoldo Armesto y Ricardo Nuñez, por su guía y apoyo en el desarrollo de este proyecto.
 
