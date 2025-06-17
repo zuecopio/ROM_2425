@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.000286] (little_warehouse) JobQueued: {'identifier': 'little_warehouse', 'dependencies': OrderedDict()}
+[0.000368] (little_warehouse) JobStarted: {'identifier': 'little_warehouse'}
+[0.058187] (little_warehouse) JobProgress: {'identifier': 'little_warehouse', 'progress': 'cmake'}
+[0.089401] (-) TimerEvent: {}
+[0.129005] (little_warehouse) Command: {'cmd': ['/usr/bin/cmake', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse', '-DCMAKE_INSTALL_PREFIX=/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse'], 'cwd': '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://proxy.upv.es:8080/'), ('QT_SCALE_FACTOR', '1'), ('USER', 'mbelmar@upv.edu.es'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alumno.upv.es.mbelmar'), ('OLDPWD', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425'), ('ROS_PYTHON_VERSION', '3'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_11'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_11'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-FwGc4PHoez,guid=7017ae6621d3ad34c402c59f6851766e'), ('COLORTERM', 'truecolor'), ('GNOME_KEYRING_CONTROL', '/home/alumno.upv.es.mbelmar/.cache/keyring-CCQG82'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('https_proxy', 'http://proxy.upv.es:8080/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mbelmar@upv.edu.es'), ('WINDOWID', '37751389'), ('http_proxy', 'http://proxy.upv.es:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '1'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alumno.upv.es.mbelmar/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04/'), ('SESSION_MANAGER', 'local/letsinf-vdi04:@/tmp/.ICE-unix/176493,unix/letsinf-vdi04:/tmp/.ICE-unix/176493'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('DISPLAY', ':11.0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/home/alumno.upv.es.mbelmar/.cache/keyring-CCQG82/ssh'), ('ROS_DOMAIN_ID', '112'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('UID', '1836892489'), ('SHELL', '/bin/bash'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_1836892489_kNwW1r'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('PWD', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse'), ('TURTLEBOT3_MODEL', 'burger'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://proxy.upv.es'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.202766] (-) TimerEvent: {}
+[0.303093] (-) TimerEvent: {}
+[0.403480] (-) TimerEvent: {}
+[0.456888] (little_warehouse) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.503582] (-) TimerEvent: {}
+[0.605638] (-) TimerEvent: {}
+[0.705978] (-) TimerEvent: {}
+[0.713397] (little_warehouse) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.762555] (little_warehouse) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.806626] (-) TimerEvent: {}
+[0.907033] (-) TimerEvent: {}
+[1.007490] (-) TimerEvent: {}
+[1.107998] (-) TimerEvent: {}
+[1.208483] (-) TimerEvent: {}
+[1.311464] (-) TimerEvent: {}
+[1.411808] (-) TimerEvent: {}
+[1.512241] (-) TimerEvent: {}
+[1.564862] (little_warehouse) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.605360] (little_warehouse) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.607698] (little_warehouse) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.607951] (little_warehouse) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.612486] (-) TimerEvent: {}
+[1.680730] (little_warehouse) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.712643] (-) TimerEvent: {}
+[1.812952] (-) TimerEvent: {}
+[1.913341] (-) TimerEvent: {}
+[2.013706] (-) TimerEvent: {}
+[2.114059] (-) TimerEvent: {}
+[2.214380] (-) TimerEvent: {}
+[2.314700] (-) TimerEvent: {}
+[2.415819] (-) TimerEvent: {}
+[2.492384] (little_warehouse) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.515931] (-) TimerEvent: {}
+[2.540721] (little_warehouse) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.541252] (little_warehouse) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.542154] (little_warehouse) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.610720] (little_warehouse) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.616098] (-) TimerEvent: {}
+[2.716410] (-) TimerEvent: {}
+[2.817865] (-) TimerEvent: {}
+[2.838309] (little_warehouse) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.917993] (-) TimerEvent: {}
+[3.019812] (-) TimerEvent: {}
+[3.120122] (-) TimerEvent: {}
+[3.192266] (little_warehouse) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.220236] (-) TimerEvent: {}
+[3.247543] (little_warehouse) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.253880] (little_warehouse) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.263844] (little_warehouse) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.284365] (little_warehouse) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.307581] (little_warehouse) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.327208] (-) TimerEvent: {}
+[3.382874] (little_warehouse) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.391477] (little_warehouse) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.435471] (-) TimerEvent: {}
+[3.523676] (little_warehouse) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.535600] (-) TimerEvent: {}
+[3.600949] (little_warehouse) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.635715] (-) TimerEvent: {}
+[3.670399] (little_warehouse) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.735831] (-) TimerEvent: {}
+[3.739035] (little_warehouse) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.835990] (-) TimerEvent: {}
+[3.936368] (-) TimerEvent: {}
+[4.036770] (-) TimerEvent: {}
+[4.137100] (-) TimerEvent: {}
+[4.237707] (-) TimerEvent: {}
+[4.338342] (-) TimerEvent: {}
+[4.439030] (-) TimerEvent: {}
+[4.518372] (little_warehouse) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.538181] (little_warehouse) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.539118] (-) TimerEvent: {}
+[4.639433] (-) TimerEvent: {}
+[4.740031] (-) TimerEvent: {}
+[4.840454] (-) TimerEvent: {}
+[4.940785] (-) TimerEvent: {}
+[5.041107] (-) TimerEvent: {}
+[5.141581] (-) TimerEvent: {}
+[5.242035] (-) TimerEvent: {}
+[5.324774] (little_warehouse) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.338087] (little_warehouse) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.342151] (-) TimerEvent: {}
+[5.435762] (little_warehouse) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[5.442258] (-) TimerEvent: {}
+[5.480141] (little_warehouse) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.17 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[5.542366] (-) TimerEvent: {}
+[5.642677] (-) TimerEvent: {}
+[5.743037] (-) TimerEvent: {}
+[5.843344] (-) TimerEvent: {}
+[5.943658] (-) TimerEvent: {}
+[6.043987] (-) TimerEvent: {}
+[6.144342] (-) TimerEvent: {}
+[6.244708] (-) TimerEvent: {}
+[6.271791] (little_warehouse) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.344864] (-) TimerEvent: {}
+[6.446493] (-) TimerEvent: {}
+[6.546854] (-) TimerEvent: {}
+[6.647245] (-) TimerEvent: {}
+[6.747651] (-) TimerEvent: {}
+[6.848049] (-) TimerEvent: {}
+[6.948376] (-) TimerEvent: {}
+[6.977418] (little_warehouse) StdoutLine: {'line': b'-- Generating done\n'}
+[7.048531] (-) TimerEvent: {}
+[7.148997] (-) TimerEvent: {}
+[7.249326] (-) TimerEvent: {}
+[7.322209] (little_warehouse) StdoutLine: {'line': b'-- Build files have been written to: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse\n'}
+[7.350051] (little_warehouse) CommandEnded: {'returncode': 0}
+[7.351074] (-) TimerEvent: {}
+[7.354246] (little_warehouse) JobProgress: {'identifier': 'little_warehouse', 'progress': 'build'}
+[7.358192] (little_warehouse) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse', '--', '-j6', '-l6'], 'cwd': '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://proxy.upv.es:8080/'), ('QT_SCALE_FACTOR', '1'), ('USER', 'mbelmar@upv.edu.es'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alumno.upv.es.mbelmar'), ('OLDPWD', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425'), ('ROS_PYTHON_VERSION', '3'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_11'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_11'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-FwGc4PHoez,guid=7017ae6621d3ad34c402c59f6851766e'), ('COLORTERM', 'truecolor'), ('GNOME_KEYRING_CONTROL', '/home/alumno.upv.es.mbelmar/.cache/keyring-CCQG82'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('https_proxy', 'http://proxy.upv.es:8080/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mbelmar@upv.edu.es'), ('WINDOWID', '37751389'), ('http_proxy', 'http://proxy.upv.es:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '1'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alumno.upv.es.mbelmar/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04/'), ('SESSION_MANAGER', 'local/letsinf-vdi04:@/tmp/.ICE-unix/176493,unix/letsinf-vdi04:/tmp/.ICE-unix/176493'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('DISPLAY', ':11.0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/home/alumno.upv.es.mbelmar/.cache/keyring-CCQG82/ssh'), ('ROS_DOMAIN_ID', '112'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('UID', '1836892489'), ('SHELL', '/bin/bash'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_1836892489_kNwW1r'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('PWD', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse'), ('TURTLEBOT3_MODEL', 'burger'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://proxy.upv.es'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.407789] (little_warehouse) StderrLine: {'line': b"gmake: Atenci\xc3\xb3n: El archivo 'Makefile' tiene una hora de modificaci\xc3\xb3n 11 s en el futuro\n"}
+[7.451203] (-) TimerEvent: {}
+[7.546593] (little_warehouse) StderrLine: {'line': b"gmake[1]: Atenci\xc3\xb3n: El archivo 'CMakeFiles/Makefile2' tiene una hora de modificaci\xc3\xb3n 11 s en el futuro\n"}
+[7.551446] (-) TimerEvent: {}
+[7.562120] (little_warehouse) StderrLine: {'line': b"gmake[2]: Atenci\xc3\xb3n: El archivo 'CMakeFiles/navigation.dir/flags.make' tiene una hora de modificaci\xc3\xb3n 10 s en el futuro\n"}
+[7.584137] (little_warehouse) StderrLine: {'line': b'gmake[2]: atenci\xc3\xb3n: Se ha detectado una desviaci\xc3\xb3n en el reloj. La construcci\xc3\xb3n podr\xc3\xada estar incompleta.\n'}
+[7.609350] (little_warehouse) StderrLine: {'line': b"gmake[2]: Atenci\xc3\xb3n: El archivo 'CMakeFiles/navigation.dir/flags.make' tiene una hora de modificaci\xc3\xb3n 10 s en el futuro\n"}
+[7.650348] (little_warehouse) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/navigation.dir/src/navigation_node.cpp.o\x1b[0m\n'}
+[7.651515] (-) TimerEvent: {}
+[7.751812] (-) TimerEvent: {}
+[7.852109] (-) TimerEvent: {}
+[7.952415] (-) TimerEvent: {}
+[8.052736] (-) TimerEvent: {}
+[8.153053] (-) TimerEvent: {}
+[8.253935] (-) TimerEvent: {}
+[8.354269] (-) TimerEvent: {}
+[8.454569] (-) TimerEvent: {}
+[8.554945] (-) TimerEvent: {}
+[8.655499] (-) TimerEvent: {}
+[8.755855] (-) TimerEvent: {}
+[8.856169] (-) TimerEvent: {}
+[8.956534] (-) TimerEvent: {}
+[9.056856] (-) TimerEvent: {}
+[9.157164] (-) TimerEvent: {}
+[9.257530] (-) TimerEvent: {}
+[9.357853] (-) TimerEvent: {}
+[9.458166] (-) TimerEvent: {}
+[9.558532] (-) TimerEvent: {}
+[9.658976] (-) TimerEvent: {}
+[9.759327] (-) TimerEvent: {}
+[9.859703] (-) TimerEvent: {}
+[9.960016] (-) TimerEvent: {}
+[10.060338] (-) TimerEvent: {}
+[10.160650] (-) TimerEvent: {}
+[10.260979] (-) TimerEvent: {}
+[10.363472] (-) TimerEvent: {}
+[10.463865] (-) TimerEvent: {}
+[10.564529] (-) TimerEvent: {}
+[10.664922] (-) TimerEvent: {}
+[10.765259] (-) TimerEvent: {}
+[10.865573] (-) TimerEvent: {}
+[10.965884] (-) TimerEvent: {}
+[11.066517] (-) TimerEvent: {}
+[11.166842] (-) TimerEvent: {}
+[11.267199] (-) TimerEvent: {}
+[11.367518] (-) TimerEvent: {}
+[11.467848] (-) TimerEvent: {}
+[11.568189] (-) TimerEvent: {}
+[11.668503] (-) TimerEvent: {}
+[11.768816] (-) TimerEvent: {}
+[11.869194] (-) TimerEvent: {}
+[11.969576] (-) TimerEvent: {}
+[12.069941] (-) TimerEvent: {}
+[12.170283] (-) TimerEvent: {}
+[12.270584] (-) TimerEvent: {}
+[12.370927] (-) TimerEvent: {}
+[12.471238] (-) TimerEvent: {}
+[12.571551] (-) TimerEvent: {}
+[12.671859] (-) TimerEvent: {}
+[12.772251] (-) TimerEvent: {}
+[12.872617] (-) TimerEvent: {}
+[12.973296] (-) TimerEvent: {}
+[13.073624] (-) TimerEvent: {}
+[13.173949] (-) TimerEvent: {}
+[13.274280] (-) TimerEvent: {}
+[13.374643] (-) TimerEvent: {}
+[13.474985] (-) TimerEvent: {}
+[13.575362] (-) TimerEvent: {}
+[13.675856] (-) TimerEvent: {}
+[13.746131] (little_warehouse) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable navigation\x1b[0m\n'}
+[13.776381] (-) TimerEvent: {}
+[13.877102] (-) TimerEvent: {}
+[13.977404] (-) TimerEvent: {}
+[14.077733] (-) TimerEvent: {}
+[14.178115] (-) TimerEvent: {}
+[14.278452] (-) TimerEvent: {}
+[14.319894] (little_warehouse) StderrLine: {'line': b'gmake[2]: atenci\xc3\xb3n: Se ha detectado una desviaci\xc3\xb3n en el reloj. La construcci\xc3\xb3n podr\xc3\xada estar incompleta.\n'}
+[14.373240] (little_warehouse) StdoutLine: {'line': b'[100%] Built target navigation\n'}
+[14.376063] (little_warehouse) StderrLine: {'line': b'gmake[1]: atenci\xc3\xb3n: Se ha detectado una desviaci\xc3\xb3n en el reloj. La construcci\xc3\xb3n podr\xc3\xada estar incompleta.\n'}
+[14.378548] (-) TimerEvent: {}
+[14.408418] (little_warehouse) StderrLine: {'line': b'gmake: atenci\xc3\xb3n: Se ha detectado una desviaci\xc3\xb3n en el reloj. La construcci\xc3\xb3n podr\xc3\xada estar incompleta.\n'}
+[14.414341] (little_warehouse) CommandEnded: {'returncode': 0}
+[14.460457] (little_warehouse) JobProgress: {'identifier': 'little_warehouse', 'progress': 'install'}
+[14.477829] (little_warehouse) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse'], 'cwd': '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://proxy.upv.es:8080/'), ('QT_SCALE_FACTOR', '1'), ('USER', 'mbelmar@upv.edu.es'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alumno.upv.es.mbelmar'), ('OLDPWD', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425'), ('ROS_PYTHON_VERSION', '3'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_11'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_11'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-FwGc4PHoez,guid=7017ae6621d3ad34c402c59f6851766e'), ('COLORTERM', 'truecolor'), ('GNOME_KEYRING_CONTROL', '/home/alumno.upv.es.mbelmar/.cache/keyring-CCQG82'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('https_proxy', 'http://proxy.upv.es:8080/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mbelmar@upv.edu.es'), ('WINDOWID', '37751389'), ('http_proxy', 'http://proxy.upv.es:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '1'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alumno.upv.es.mbelmar/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04/'), ('SESSION_MANAGER', 'local/letsinf-vdi04:@/tmp/.ICE-unix/176493,unix/letsinf-vdi04:/tmp/.ICE-unix/176493'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('DISPLAY', ':11.0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/home/alumno.upv.es.mbelmar/.cache/keyring-CCQG82/ssh'), ('ROS_DOMAIN_ID', '112'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('UID', '1836892489'), ('SHELL', '/bin/bash'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_1836892489_kNwW1r'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('PWD', '/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse'), ('TURTLEBOT3_MODEL', 'burger'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://proxy.upv.es'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.491777] (-) TimerEvent: {}
+[14.496441] (little_warehouse) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.529239] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/little_warehouse/navigation\n'}
+[14.591902] (-) TimerEvent: {}
+[14.625327] (little_warehouse) StdoutLine: {'line': b'-- Set runtime path of "/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/little_warehouse/navigation" to ""\n'}
+[14.628837] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch\n'}
+[14.648237] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/navigation_with_speed_limit.launch.py\n'}
+[14.681069] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/coppeliasim_no_rviz2.launch.py\n'}
+[14.692016] (-) TimerEvent: {}
+[14.716580] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/cartographer.launch.py\n'}
+[14.752206] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/speed_limit.launch.py\n'}
+[14.791563] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/param\n'}
+[14.792108] (-) TimerEvent: {}
+[14.800787] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/param/nav2_params_speed_limit.yaml\n'}
+[14.843713] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/param/burger.yaml\n'}
+[14.875184] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/param/orders.yaml\n'}
+[14.892260] (-) TimerEvent: {}
+[14.908949] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/param/speed_params.yaml\n'}
+[14.959246] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/param/positions.yaml\n'}
+[14.992401] (-) TimerEvent: {}
+[14.996945] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/scenes\n'}
+[15.006340] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/scenes/coppeliasim_scene.ttt\n'}
+[15.092554] (-) TimerEvent: {}
+[15.192947] (-) TimerEvent: {}
+[15.271343] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz\n'}
+[15.281585] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz/tb3_coppeliasim.rviz\n'}
+[15.293070] (-) TimerEvent: {}
+[15.328286] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz/tb3_coppeliasim_map.rviz\n'}
+[15.361389] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf\n'}
+[15.373256] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf/turtlebot3_burger.urdf\n'}
+[15.393198] (-) TimerEvent: {}
+[15.413204] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf/turtlebot3_burger_cam.urdf\n'}
+[15.455272] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf/common_properties.urdf\n'}
+[15.492606] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/models\n'}
+[15.493269] (-) TimerEvent: {}
+[15.507177] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/models/turtlebot3_burger\n'}
+[15.520569] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/models/turtlebot3_burger/model.config\n'}
+[15.566842] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/models/turtlebot3_burger/model-1_4.sdf\n'}
+[15.594118] (-) TimerEvent: {}
+[15.626875] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/models/turtlebot3_burger/model.sdf\n'}
+[15.694221] (-) TimerEvent: {}
+[15.708720] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/package_run_dependencies/little_warehouse\n'}
+[15.755878] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/parent_prefix_path/little_warehouse\n'}
+[15.794351] (-) TimerEvent: {}
+[15.796127] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/ament_prefix_path.sh\n'}
+[15.830038] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/ament_prefix_path.dsv\n'}
+[15.861945] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/path.sh\n'}
+[15.894476] (-) TimerEvent: {}
+[15.896845] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/path.dsv\n'}
+[15.934971] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.bash\n'}
+[15.974458] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.sh\n'}
+[15.994630] (-) TimerEvent: {}
+[16.011315] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.zsh\n'}
+[16.049024] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.dsv\n'}
+[16.082699] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.dsv\n'}
+[16.094976] (-) TimerEvent: {}
+[16.136919] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/packages/little_warehouse\n'}
+[16.188415] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.195123] (-) TimerEvent: {}
+[16.225717] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/little_warehouseConfig.cmake\n'}
+[16.270129] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/little_warehouseConfig-version.cmake\n'}
+[16.295224] (-) TimerEvent: {}
+[16.310594] (little_warehouse) StdoutLine: {'line': b'-- Installing: /home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.xml\n'}
+[16.363483] (little_warehouse) CommandEnded: {'returncode': 0}
+[16.395347] (-) TimerEvent: {}
+[16.495847] (-) TimerEvent: {}
+[16.596164] (-) TimerEvent: {}
+[16.696540] (-) TimerEvent: {}
+[16.796893] (-) TimerEvent: {}
+[16.897237] (-) TimerEvent: {}
+[16.917822] (little_warehouse) JobEnded: {'identifier': 'little_warehouse', 'rc': 0}
+[16.956626] (-) EventReactorShutdown: {}

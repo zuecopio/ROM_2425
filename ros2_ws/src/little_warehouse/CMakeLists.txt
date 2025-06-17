@@ -23,10 +23,10 @@ find_package(nav2_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(yaml-cpp REQUIRED)
 
-add_executable(navigation 
+add_executable(navigation_node 
   src/navigation_node.cpp)
 
-ament_target_dependencies(navigation
+ament_target_dependencies(navigation_node
   rclcpp
   yaml-cpp
   rclcpp_action
@@ -34,7 +34,7 @@ ament_target_dependencies(navigation
   geometry_msgs
 )
 
-target_link_libraries(navigation
+target_link_libraries(navigation_node
   yaml-cpp
 )
 
@@ -44,7 +44,7 @@ target_link_libraries(navigation
 
 # Install folder (executables inside)
 install(TARGETS
-  navigation
+  navigation_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

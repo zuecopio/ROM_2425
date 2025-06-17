@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c460c21bc1cd74397ab4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "little_warehouse",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "little_warehouse_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-little_warehouse_uninstall-f06818fa797d6c93c290.json",
+					"name" : "little_warehouse_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation-346eb1cc4f4a1f2caf3f.json",
+					"name" : "navigation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-824ed9834f25567b8403.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse",
+		"source" : "/home/alumno.upv.es.mbelmar/W/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
