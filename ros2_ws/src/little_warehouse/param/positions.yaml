@@ -1,0 +1,119 @@
+positions:
+  # Posicinones de inicio y fin de la secuencia
+  start:
+    x: 0.000
+    y: 0.000
+    orientation: 0.00
+  end:
+    x: 4.000
+    y: 0.000
+    orientation: 0.00
+  # Posicinones de los productos
+  apple:
+    x: 1.250
+    y: 0.510
+    orientation: -1.57
+  avocado:
+    x: 1.250
+    y: 0.510
+    orientation: -1.57
+  banana:
+    x: 1.250
+    y: 0.510
+    orientation: -1.57
+  blueberry:
+    x: 1.250
+    y: 0.000
+    orientation: -1.57
+  cherry:
+    x: 1.250
+    y: 0.000
+    orientation: -1.57
+  durian:
+    x: 1.250
+    y: 0.000
+    orientation: -1.57
+  grape:
+    x: 1.250
+    y: -0.510
+    orientation: -1.57
+  grapefruit:
+    x: 1.250
+    y: -0.510
+    orientation: -1.57
+  kiwi:
+    x: 1.250
+    y: -0.510
+    orientation: -1.57
+  lemon:
+    x: 1.750
+    y: -0.510
+    orientation: 1.57
+  lime:
+    x: 1.750
+    y: -0.510
+    orientation: 1.57
+  mamoncillo:
+    x: 1.750
+    y: -0.510
+    orientation: 1.57
+  mandarin:
+    x: 1.750
+    y: 0.000
+    orientation: 1.57
+  mango:
+    x: 1.750
+    y: 0.000
+    orientation: 1.57
+  melon:
+    x: 1.750
+    y: 0.000
+    orientation: 1.57 
+  nectarine:
+    x: 1.750
+    y: 0.510
+    orientation: 1.57
+  orange:
+    x: 1.750
+    y: 0.510
+    orientation: 1.57
+  papaya:
+    x: 1.750
+    y: 0.510
+    orientation: 1.57
+  peach:
+    x: 2.250
+    y: 0.510
+    orientation: -1.57
+  pear:
+    x: 2.250
+    y: 0.510
+    orientation: -1.57
+  persimmon:
+    x: 2.250
+    y: 0.510
+    orientation: -1.57
+  pineapple:
+    x: 2.250
+    y: 0.000
+    orientation: -1.57
+  pommelo:
+    x: 2.250
+    y: 0.000
+    orientation: -1.57
+  raspberry:
+    x: 2.250
+    y: 0.000
+    orientation: -1.57
+  strawberry:
+    x: 2.250
+    y: -0.510
+    orientation: -1.57
+  tangerine:
+    x: 2.250
+    y: -0.510
+    orientation: -1.57
+  watermelon:
+    x: 2.250
+    y: -0.510
+    orientation: -1.57
