@@ -43,7 +43,7 @@ export ROS_LOCALHOST_ONLY=1
 source /opt/ros/humble/setup.bash
 source /home/USER/.../ROM_2425/ros2_ws/install/setup.bash
 export TURTLEBOT3_MODEL=burger
-export LDS_MODEL=LDS-02 # puede que esto sobre
+export LDS_MODEL=LDS-02 # puede que esto sobregit push
 
 # <<< ROS 2 Humble <<<
 
