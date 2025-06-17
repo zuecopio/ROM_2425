@@ -24,7 +24,7 @@ Este proyecto de robótica móvil tiene como objetivo desarrollar un sistema aut
 Para instalar CoppeliaSim, sigue estos pasos:
 
 ```bash
-cd /home/alumno.upv.es.TU_USUARIO/non-snap/CoppeliaSim
+cd /home/USER/non-snap/CoppeliaSim
 wget https://downloads.coppeliarobotics.com/V4_9_0_rev6/CoppeliaSim_Edu_V4_9_0_\
 rev6_Ubuntu22_04.tar.xz
 tar -xvf CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04.tar.xz
@@ -49,7 +49,7 @@ export LDS_MODEL=LDS-02
 
 # >>> CoppeliaSim >>>
 
-export PATH=$PATH:~/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04/
+export PATH=$PATH:/home/USER/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04/
 
 # <<< CoppeliaSim <<<
 ```
@@ -107,7 +107,7 @@ ros2 launch little_warehouse coppeliasim_no_rviz2.launch.py
 Lanza el fichero launch del limitador de velocidad:
 
 ```bash
-ros2 launch little_warehouse speed_limit.launch.py params_file:=./param/speed_params.yaml mask:=./maps/speed_mask_coppeliasim_map.yaml
+ros2 launch little_warehouse speed_limit.launch.py params_file:=./params/speed_params.yaml mask:=./maps/speed_mask_coppeliasim_map.yaml
 ```
 
 *Captura de pantalla*
@@ -117,7 +117,7 @@ ros2 launch little_warehouse speed_limit.launch.py params_file:=./param/speed_pa
 Ahora debemos lanzar el launch de navegación:
 
 ```bash
-ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/coppeliasim_map.yaml params_file:=./param/nav2_params_speed_limit.yaml
+ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/coppeliasim_map.yaml params_file:=./params/nav2_params_speed_limit.yaml
 ```
 
 *Captura de pantalla*
@@ -127,7 +127,7 @@ ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/c
 Por último, lanza el nodo que enviará al robot las posiciones por donde debe pasar para recoger los elementos entre las estanterías:
 
 ```bash
-ros2 run little_warehouse navigation
+ros2 run little_warehouse navigation_node
 ```
 
 Otra forma de lanzar este nodo es especificando qué orden se quiere realizar:
@@ -139,6 +139,10 @@ ros2 run little_warehouse navigation --ros-args -p order:="friday"
 El argumento order puede ser: "monday, tuesday, wednesday, thursday, friday, saturday, sunday".
 
 *Captura de pantalla*
+
+## Conclusiones y trabajo a futuro
+
+Blabla
 
 ## Licencia
 
