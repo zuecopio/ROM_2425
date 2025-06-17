@@ -38,12 +38,12 @@ Añade las siguientes líneas a tu archivo `.bashrc` para configurar el entorno:
 ```sh
 # >>> ROS 2 Humble >>>
 
-export ROS_DOMAIN_ID=EL_NUMERO_QUE_QUIERASS
+export ROS_DOMAIN_ID=0
 export ROS_LOCALHOST_ONLY=1
 source /opt/ros/humble/setup.bash
-source /home/alumno.upv.es.TU_USUARIO/W/GIIROB/G3/ROM/ros2_ws/install/setup.bash
+source /home/USER/.../ROM_2425/ros2_ws/install/setup.bash
 export TURTLEBOT3_MODEL=burger
-export LDS_MODEL=LDS-02
+export LDS_MODEL=LDS-02 # puede que esto sobre
 
 # <<< ROS 2 Humble <<<
 
