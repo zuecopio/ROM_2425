@@ -23,7 +23,29 @@ public:
     {
         YAML::Node orders = YAML::LoadFile("./param/orders.yaml");
         YAML::Node positions = YAML::LoadFile("./param/positions.yaml");
+       
+        this->declare_parameter<std::string>(
+            "order",    // se establece el valor que se pasa por terminal con order:="blabla"
+            "monday");  // si no se establece monday por defecto
+        std::string day_order = this->get_parameter("order").as_string();
+        RCLCPP_INFO(this->get_logger(), "Order: %s", day_order.c_str());
+
+        // Lista de días de la semana en inglés
+        std::vector<std::string> valid_days = {
+            "monday", "tuesday", "wednesday",
+            "thursday", "friday", "saturday", "sunday"};
         
+        // Comprobar si el día proporcionado es válido
+        if (std::find(valid_days.begin(), valid_days.end(), day_order) == valid_days.end())
+        {
+            RCLCPP_ERROR(this->get_logger(), "Invalid day order: %s. Node will shut down.", day_order.c_str());
+            rclcpp::shutdown();
+        }
+        else
+        {
+            RCLCPP_INFO(this->get_logger(), "Valid day order: %s", day_order.c_str());
+        }
+
         // ---------------------------------------------------------------------
 
         for (const auto & order : orders["orders"]["monday"])
