@@ -39,6 +39,11 @@
 #include "rclcpp_action/rclcpp_action.hpp"
 
 
+//-----[ USING DIRECTIVES & TYPEDEFS  ]---------------------------------------//
+
+using namespace std;
+
+
 //-----[ NAVIGATION NODE CLASS ]----------------------------------------------//
 
 /**
@@ -74,22 +79,22 @@ class NavigationNode : public rclcpp::Node
 
             // Declare a parameter "order" which can be set from the terminal,
             // defaulting to "monday" if not provided
-            this->declare_parameter<std::string>(
+            this->declare_parameter<string>(
                 "order",    // The name of the parameter (set via terminal as
                             // order:=<value>)
                 "monday");  // Default value if none is provided
 
-            std::string day_order = this->get_parameter("order").as_string();
+            string day_order = this->get_parameter("order").as_string();
             RCLCPP_INFO(this->get_logger(), "Order: %s", day_order.c_str());
 
             // List of valid weekdays
-            std::vector<std::string> valid_days = {
+            vector<string> valid_days = {
                 "monday", "tuesday", "wednesday",
                 "thursday", "friday", "saturday", "sunday"
             };
 
             // Check if the provided day is valid
-            if (std::find(valid_days.begin(), valid_days.end(), day_order)
+            if (find(valid_days.begin(), valid_days.end(), day_order)
                 == valid_days.end())
             {
                 RCLCPP_ERROR(
@@ -112,17 +117,19 @@ class NavigationNode : public rclcpp::Node
             // files for the chosen day
             for (const auto & order : orders["orders"]["monday"])
             {
-                std::string name = order.as<std::string>();
+                string name = order.as<string>();
+
                 if (positions["positions"][name])
                 {
                     float x = positions["positions"][name]["x"].as<float>();
                     float y = positions["positions"][name]["y"].as<float>();
                     float orientation = (
-                        positions["positions"][name]["orientation"].as<float>());
+                        positions[
+                            "positions"][name]["orientation"].as<float>());
                         
                     if (last_x_ != x)
                     {
-                        auto key = std::make_pair(last_x_, x);
+                        auto key = make_pair(last_x_, x);
 
                         // Verify if the key exists
                         if (transition_positions_.count(key))
@@ -132,7 +139,7 @@ class NavigationNode : public rclcpp::Node
                             {
                                 pick_sequence_.emplace_back(
                                     aux_position,
-                                    std::make_tuple(
+                                    make_tuple(
                                         positions[
                                             "positions"][
                                                 aux_position][
@@ -155,21 +162,21 @@ class NavigationNode : public rclcpp::Node
 
                     pick_sequence_.emplace_back(
                         name,
-                        std::make_tuple(
+                        make_tuple(
                             x, y, orientation
                         )
                     );
                 }
             }
 
-            auto key = std::make_pair(last_x_, 4.000);
+            auto key = make_pair(last_x_, 4.000);
             if (transition_positions_.count(key)) // Verify if the key exists
             {
                 for (const auto& aux_position : transition_positions_[key])
                 {
                     pick_sequence_.emplace_back(
                         aux_position,
-                        std::make_tuple(
+                        make_tuple(
                             positions[
                                 "positions"][
                                     aux_position][
@@ -195,8 +202,8 @@ class NavigationNode : public rclcpp::Node
 
             // Timer to periodically try sending the next goal
             timer_ = this->create_wall_timer(
-                std::chrono::seconds(1),
-                std::bind(&NavigationNode::try_send_goal, this)
+                chrono::seconds(1),
+                bind(&NavigationNode::try_send_goal, this)
             );
 
         }   /* NavigationNode() */
@@ -209,32 +216,59 @@ class NavigationNode : public rclcpp::Node
         
         /// Variables
 
-        using Pick = std::pair<std::string, std::tuple<float, float, float>>;
-        std::vector<Pick> pick_sequence_;
-        std::vector<Pick>::iterator current_;
+        using Pick = pair<string, tuple<float, float, float>>;
+        vector<Pick> pick_sequence_;
+        vector<Pick>::iterator current_;
 
         rclcpp_action::Client<NavigateToPose>::SharedPtr client_;
         rclcpp::TimerBase::SharedPtr timer_;
-        std::vector<std::array<double, 3>> goals_;
+        vector<array<double, 3>> goals_;
         size_t goal_index_ = 0;
         bool goal_active_ = false;
         
         float last_x_ = 0.0;
         
-        std::map<std::pair<float, float>, std::vector<std::string>> transition_positions_ = 
+        map<pair<float, float>, vector<string>> transition_positions_ = 
         {
             // From start to rack 1
-            {{0.000, 1.250}, {"rack1start"}},
+            {{0.000, 1.250},
+             {"rack1start"}},
+
             // From start to rack 2
-            {{0.000, 1.750}, {"rack2start"}},
-            {{0.000, 2.250}, {"rack3start"}}, // From start to rack 3
-            {{0.000, 4.000}, {"end"}}, // From start to end
-            {{1.250, 1.750}, {"rack1end", "rack2start"}}, // From rack 1 to rack 2
-            {{1.250, 2.250}, {"rack1end", "rack2start", "rack2end", "rack3start"}}, // From rack 1 to rack 3
-            {{1.250, 4.000}, {"rack1end", "end"}}, // From rack 1 to end
-            {{1.750, 2.250}, {"rack2end", "rack3start"}}, // From rack 2 to rack 3
-            {{1.750, 4.000}, {"rack2end", "end"}}, // From rack 2 to end
-            {{2.250, 4.000}, {"rack3end", "end"}} // From rack 3 to end
+            {{0.000, 1.750},
+             {"rack2start"}},
+
+            // From start to rack 3
+            {{0.000, 2.250},
+             {"rack3start"}},
+
+            // From start to end
+            {{0.000, 4.000},
+             {"end"}},
+
+            // From rack 1 to rack 2
+            {{1.250, 1.750},
+             {"rack1end", "rack2start"}},
+
+            // From rack 1 to rack 3
+            {{1.250, 2.250},
+             {"rack1end", "rack2start", "rack2end", "rack3start"}},
+
+            // From rack 1 to end
+            {{1.250, 4.000},
+             {"rack1end", "end"}},
+
+            // From rack 2 to rack 3
+            {{1.750, 2.250},
+             {"rack2end", "rack3start"}},
+
+            // From rack 2 to end
+            {{1.750, 4.000},
+             {"rack2end", "end"}},
+
+            // From rack 3 to end
+            {{2.250, 4.000},
+             {"rack3end", "end"}}
         };
 
         /// Functions
@@ -248,7 +282,7 @@ class NavigationNode : public rclcpp::Node
          */
         void try_send_goal(void)
         {
-            if (!client_->wait_for_action_server(std::chrono::seconds(1)))
+            if (!client_->wait_for_action_server(chrono::seconds(1)))
             {
                 RCLCPP_WARN(
                     this->get_logger(),
@@ -265,9 +299,9 @@ class NavigationNode : public rclcpp::Node
             auto goal_msg = NavigateToPose::Goal();
             goal_msg.pose.header.frame_id = "map";
             goal_msg.pose.header.stamp = this->get_clock()->now();
-            goal_msg.pose.pose.position.x = std::get<0>(current_->second);
-            goal_msg.pose.pose.position.y = std::get<1>(current_->second);
-            double theta = std::get<2>(current_->second);
+            goal_msg.pose.pose.position.x = get<0>(current_->second);
+            goal_msg.pose.pose.position.y = get<1>(current_->second);
+            double theta = get<2>(current_->second);
             goal_msg.pose.pose.orientation.z = sin(theta / 2.0);
             goal_msg.pose.pose.orientation.w = cos(theta / 2.0);
 
@@ -281,14 +315,14 @@ class NavigationNode : public rclcpp::Node
             rclcpp_action::Client<NavigateToPose>::SendGoalOptions options;
             
             options.goal_response_callback =
-                std::bind(
+                bind(
                     &NavigationNode::goal_response_callback,
-                    this, std::placeholders::_1);
+                    this, placeholders::_1);
             
                 options.result_callback =
-                std::bind(
+                bind(
                     &NavigationNode::result_callback,
-                    this, std::placeholders::_1);
+                    this, placeholders::_1);
 
             client_->async_send_goal(goal_msg, options);
         
@@ -371,7 +405,7 @@ class NavigationNode : public rclcpp::Node
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<NavigationNode>());
+    rclcpp::spin(make_shared<NavigationNode>());
     rclcpp::shutdown();
     return (0);
 
