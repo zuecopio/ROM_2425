@@ -76,6 +76,8 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 ![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
 
+> A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.
+
 #### 🗺️ Terminal 3 - Guardar el mapa (.pgm):
 
 ```bash
