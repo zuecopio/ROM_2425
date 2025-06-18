@@ -1,4 +1,4 @@
-# 🤖 Proyecto de Robótica móvil
+# 🤖 Proyecto de Robótica Móvil
 
 ## 📋 Descripción
 
@@ -130,9 +130,19 @@ ros2 run little_warehouse navigation --ros-args -p order:="friday"
 
 *Captura de pantalla*
 
-## 📌 Conclusiones y trabajo a futuro
+## 📌 Conclusiones
 
-Blabla
+- ✅ Se ha logrado implementar un sistema completo de navegación autónoma en un entorno simulado, integrando ROS 2 y CoppeliaSim.
+- ✅ Ha sido posible cartografiar el entorno y guardar el mapa generado para su posterior uso.
+- ✅ Se ha desarrollado un sistema de planificación y ejecución de órdenes de navegación con restricciones de velocidad.
+- ✅ Se ha incorporado un sistema de teleoperación útil para exploración y depuración, principalmente para cartografiar el entorno.
+- ✅ El proyecto nos ha permitido aplicar los conocimientos de percepción, control y planificación en un entorno de simulación realista aprendidos durante el desarrollo de la asignatura de Robótica Móvil.
+
+## 🌱 Trabajo a futuro
+
+- 🔧 Ajustar y optimizar los parámetros del archivo `nav2_params_speed_limit.yaml` para mejorar la eficiencia y estabilidad de la navegación.
+- 🧭 Añadir puntos de navegación auxiliares en los extremos de las estanterías para facilitar el movimiento del robot entre las estanterías.
+- 🏗️ Revisar la configuración del escenario para mejorar la navegabilidad: esto puede implicar aumentar la separación entre estanterías en la simulación o, alternativamente, migrar a un simulador más avanzado que permita una mejor generalización a entornos reales donde se busca optimizar el espacio sin necesidad de grandes separaciones.
 
 ## 📄 Licencia
 
