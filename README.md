@@ -1,5 +1,18 @@
 # 🤖 Proyecto de Robótica Móvil
 
+![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
+
+## Índice
+
+- [Descripción](#descripcion)
+- [Objetivos](#objetivos)
+- [Requisitos](#requisitos)
+- [¿Cómo ejecutar el programa?](#como-ejecutar-el-programa)
+- [Conclusiones](#conclusiones)
+- [Trabajo a futuro](#trabajo-a-futuro)
+- [Licencia](#licencia)
+- [Agradecimientos](#agradecimientos)
+
 ## 📋 Descripción
 
 Este proyecto de robótica móvil tiene como objetivo desarrollar un sistema autónomo capaz de navegar y realizar tareas específicas en un entorno simulado utilizando ROS 2 y CoppeliaSim. 
