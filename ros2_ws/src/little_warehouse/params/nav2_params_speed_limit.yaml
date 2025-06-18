@@ -135,7 +135,7 @@ controller_server:
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.1  # modified: before was 0.25
       yaw_goal_tolerance: 0.25
     # DWB parameters
     FollowPath:
@@ -164,7 +164,7 @@ controller_server:
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
-      xy_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.1  # modified: before was 0.25
       trans_stopped_velocity: 0.01  # modified: before was 0.25 - loco este parametro es god - bajar a 0.01 para que el robot no considere que está parado cuando aún se mueve lentamente
       short_circuit_trajectory_evaluation: True
       stateful: True
@@ -280,8 +280,8 @@ planner_server:
     planner_plugins: ["GridBased"]
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.5  # modified: before was 0.5
-      use_astar: false  # modified: before was false
+      tolerance: 0.5
+      use_astar: false
       allow_unknown: true
 
 smoother_server:

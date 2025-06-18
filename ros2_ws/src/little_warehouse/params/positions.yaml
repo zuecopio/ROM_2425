@@ -9,6 +9,32 @@ positions:
     x: 4.000
     y: 0.000
     orientation: 0.00
+
+  # Rack pivot positions
+  rack1end:
+    x: 1.250
+    y: -0.900
+    orientation: -1.57
+
+  rack2start:
+    x: 1.750
+    y: -0.900
+    orientation: 1.57
+
+  rack2end:
+    x: 1.750
+    y: 0.900
+    orientation: 1.57
+
+  rack3start:
+    x: 2.250
+    y: 0.900
+    orientation: -1.57
+
+  rack3end:
+    x: 2.250
+    y: -0.900
+    orientation: -1.57
     
   # Positions of the products
   apple:

@@ -1,0 +1,41 @@
+[0.013s] Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble /usr/bin/cmake --build /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse -- -j12 -l12
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target navigation_node[0m
+[0.079s] [100%] Built target navigation_node
+[0.092s] Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble /usr/bin/cmake --build /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse -- -j12 -l12
+[0.103s] Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble /usr/bin/cmake --install /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse
+[0.111s] -- Install configuration: ""
+[0.112s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/little_warehouse/navigation_node
+[0.112s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch
+[0.112s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/cartographer.launch.py
+[0.112s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/coppeliasim_no_rviz2.launch.py
+[0.112s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/speed_limit.launch.py
+[0.112s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/navigation_with_speed_limit.launch.py
+[0.113s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params
+[0.113s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/positions.yaml
+[0.113s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/nav2_params_speed_limit.yaml
+[0.113s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/speed_params.yaml
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/burgerr.yaml
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/orders.yaml
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/scenes
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/scenes/coppeliasim_scene.ttt
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz/navigation_with_speed_limit.rviz
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf/turtlebot3_burger.urdf
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/package_run_dependencies/little_warehouse
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/parent_prefix_path/little_warehouse
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/ament_prefix_path.sh
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/ament_prefix_path.dsv
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/path.sh
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/path.dsv
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.bash
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.sh
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.zsh
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.dsv
+[0.114s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.dsv
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/packages/little_warehouse
+[0.114s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.115s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/little_warehouseConfig.cmake
+[0.115s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/little_warehouseConfig-version.cmake
+[0.115s] -- Up-to-date: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.xml
+[0.116s] Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble /usr/bin/cmake --install /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse

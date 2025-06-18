@@ -113,6 +113,14 @@ class NavigationNode : public rclcpp::Node
                     float y = positions["positions"][name]["y"].as<float>();
                     float orientation = (
                         positions["positions"][name]["orientation"].as<float>());
+                        
+                    if (last_x != x)
+                    {
+                    	// añadir pivote de end de la fila (depende de last_x)
+                    	// y añadir el pivote de start de la siguiente fila depende de (x)
+                    	// actualizar last_x
+                    	
+                    }
 
                     pick_sequence_.emplace_back(
                         name, std::make_tuple(x, y, orientation));

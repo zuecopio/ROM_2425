@@ -123,7 +123,7 @@ ros2 run little_warehouse navigation_node
 Otra forma de lanzar este nodo es especificando qué orden se quiere realizar:
 
 ```bash
-ros2 run little_warehouse navigation --ros-args -p order:="friday"
+ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 ```
 
 🗓️ El argumento order puede ser: "monday, tuesday, wednesday, thursday, friday, saturday, sunday".

@@ -1,0 +1,80 @@
+[0.011s] Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse -DCMAKE_INSTALL_PREFIX=/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.130s] -- The CXX compiler identification is GNU 11.4.0
+[0.139s] -- Detecting C compiler ABI info
+[0.212s] -- Detecting C compiler ABI info - done
+[0.219s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.219s] -- Detecting C compile features
+[0.219s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.308s] -- Detecting CXX compiler ABI info - done
+[0.315s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.315s] -- Detecting CXX compile features
+[0.316s] -- Detecting CXX compile features - done
+[0.319s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.645s] -- Found Python3: /home/marcos/non-snap/miniconda3/bin/python3 (found version "3.12.9") found components: Interpreter 
+[0.754s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.799s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.804s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.813s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.824s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.841s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.887s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.890s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.014s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.047s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.096s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.105s] -- Looking for pthread.h
+[1.185s] -- Looking for pthread.h - found
+[1.185s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.262s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.263s] -- Found Threads: TRUE  
+[1.311s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.343s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.482s] -- Configuring done
+[1.493s] -- Generating done
+[1.498s] -- Build files have been written to: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse
+[1.508s] Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse -DCMAKE_INSTALL_PREFIX=/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse
+[1.510s] Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse -- -j12 -l12
+[1.563s] [ 50%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[5.500s] [100%] [32m[1mLinking CXX executable navigation_node[0m
+[5.735s] [100%] Built target navigation_node
+[5.749s] Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse -- -j12 -l12
+[5.760s] Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse
+[5.767s] -- Install configuration: ""
+[5.767s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/little_warehouse/navigation_node
+[5.768s] -- Set runtime path of "/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/little_warehouse/navigation_node" to ""
+[5.768s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/cartographer.launch.py
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/coppeliasim_no_rviz2.launch.py
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/speed_limit.launch.py
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/launch/navigation_with_speed_limit.launch.py
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/positions.yaml
+[5.769s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/nav2_params_speed_limit.yaml
+[5.770s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/speed_params.yaml
+[5.770s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/burgerr.yaml
+[5.770s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/params/orders.yaml
+[5.770s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/scenes
+[5.770s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/scenes/coppeliasim_scene.ttt
+[5.777s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz
+[5.777s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/rviz/navigation_with_speed_limit.rviz
+[5.778s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf
+[5.778s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/urdf/turtlebot3_burger.urdf
+[5.778s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/package_run_dependencies/little_warehouse
+[5.778s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/parent_prefix_path/little_warehouse
+[5.778s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/ament_prefix_path.sh
+[5.778s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/ament_prefix_path.dsv
+[5.779s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/path.sh
+[5.779s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/environment/path.dsv
+[5.779s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.bash
+[5.779s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.sh
+[5.779s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.zsh
+[5.780s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/local_setup.dsv
+[5.780s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.dsv
+[5.780s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/ament_index/resource_index/packages/little_warehouse
+[5.780s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.780s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/little_warehouseConfig.cmake
+[5.780s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/cmake/little_warehouseConfig-version.cmake
+[5.781s] -- Installing: /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.xml
+[5.784s] Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse
