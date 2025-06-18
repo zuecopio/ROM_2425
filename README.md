@@ -140,8 +140,8 @@ ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 
 ## 🌱 Trabajo a futuro
 
-- 🔧 Ajustar y optimizar los parámetros del archivo `nav2_params_speed_limit.yaml` para mejorar la eficiencia y estabilidad de la navegación.
-- 🧭 Añadir puntos de navegación auxiliares en los extremos de las estanterías para facilitar el movimiento del robot entre las estanterías.
+- 🔧 Simular el proceso de recogida de los productos de las estanterías.
+- 🧭 Ajustar y optimizar los parámetros del archivo `nav2_params_speed_limit.yaml` para mejorar la eficiencia, permitiendo la eliminación de los puntos de navegación auxiliares en los extremos de las estanterías que facilitaban el movimiento del robot entre ellas.
 - 🏗️ Revisar la configuración del escenario para mejorar la navegabilidad: esto puede implicar aumentar la separación entre estanterías en la simulación o, alternativamente, migrar a un simulador más avanzado que permita una mejor generalización a entornos reales donde se busca optimizar el espacio sin necesidad de grandes separaciones.
 
 ## 📄 Licencia
