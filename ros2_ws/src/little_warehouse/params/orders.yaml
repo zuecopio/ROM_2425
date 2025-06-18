@@ -3,18 +3,13 @@ orders:
     - apple
     - blueberry
     - cherry
-    - rack1end
-    - rack2start
     - mango
     - melon
     - nectarine
     - papaya
-    - rack2end
-    - rack3start
     - peach
     - raspberry
     - watermelon
-    - rack3end
 
   tuesday:
     - avocado
@@ -22,33 +17,23 @@ orders:
     - durian
     - grapefruit
     - kiwi
-    - rack1end
-    - rack2start
     - lime
     - mandarin
     - orange
-    - rack2end
-    - rack3start
     - pear
     - pommelo
-    - rack3end
 
   wednesday:
     - banana
     - cherry
     - kiwi
-    - rack1end
-    - rack2start
     - lemon
     - mamoncillo
-    - rack2end
-    - rack3start
     - pineapple
     - pommelo
     - strawberry
     - tangerine
     - watermelon
-    - rack3end
 
   thursday:
     - apple
@@ -56,30 +41,20 @@ orders:
     - blueberry
     - durian
     - grape
-    - rack1end
-    - rack2start
     - mango
     - nectarine
-    - rack2end
-    - rack3start
     - peach
     - persimmon
     - raspberry
-    - rack3end
 
   friday:
     - banana
     - cherry
     - grapefruit
     - kiwi
-    - rack1end
-    - rack2start
     - lemon
     - mandarin
     - melon
     - orange
     - papaya
-    - rack2end
-    - rack3start
     - pear
-    - rack3end

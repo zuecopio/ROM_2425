@@ -23,14 +23,20 @@
 
 //-----[ NECESSARY LIBRARIES ]------------------------------------------------//
 
+// Standard library includes
+#include <array>
+#include <map>
+#include <string>
+#include <vector>
+
+// Third-party library includes
+#include <yaml-cpp/yaml.h>
+
+// Project-specific includes
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "nav2_msgs/action/navigate_to_pose.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
-#include "nav2_msgs/action/navigate_to_pose.hpp"
-#include "geometry_msgs/msg/pose_stamped.hpp"
-#include <array>
-#include <vector>
-#include <yaml-cpp/yaml.h>
-#include <string>
 
 
 //-----[ NAVIGATION NODE CLASS ]----------------------------------------------//
@@ -114,25 +120,72 @@ class NavigationNode : public rclcpp::Node
                     float orientation = (
                         positions["positions"][name]["orientation"].as<float>());
                         
-                    if (last_x != x)
+                    if (last_x_ != x)
                     {
-                    	// añadir pivote de end de la fila (depende de last_x)
-                    	// y añadir el pivote de start de la siguiente fila depende de (x)
-                    	// actualizar last_x
-                    	
+                        auto key = std::make_pair(last_x_, x);
+
+                        // Verify if the key exists
+                        if (transition_positions_.count(key))
+                        {
+                            for (const auto& aux_position : 
+                                 transition_positions_[key])
+                            {
+                                pick_sequence_.emplace_back(
+                                    aux_position,
+                                    std::make_tuple(
+                                        positions[
+                                            "positions"][
+                                                aux_position][
+                                                    "x"].as<float>(),
+                                        positions[
+                                            "positions"][
+                                                aux_position][
+                                                    "y"].as<float>(),
+                                        positions[
+                                            "positions"][
+                                                aux_position][
+                                                    "orientation"].as<float>()
+                                    )
+                                );
+                            }
+                        }
+
+                        last_x_ = x;
                     }
 
                     pick_sequence_.emplace_back(
-                        name, std::make_tuple(x, y, orientation));
+                        name,
+                        std::make_tuple(
+                            x, y, orientation
+                        )
+                    );
                 }
             }
 
-            // Add an "end" position at the end of the pick sequence
-            pick_sequence_.emplace_back("end", std::make_tuple(
-                positions["positions"]["end"]["x"].as<float>(),
-                positions["positions"]["end"]["y"].as<float>(),
-                positions["positions"]["end"]["orientation"].as<float>()
-            ));
+            auto key = std::make_pair(last_x_, 4.000);
+            if (transition_positions_.count(key)) // Verify if the key exists
+            {
+                for (const auto& aux_position : transition_positions_[key])
+                {
+                    pick_sequence_.emplace_back(
+                        aux_position,
+                        std::make_tuple(
+                            positions[
+                                "positions"][
+                                    aux_position][
+                                        "x"].as<float>(),
+                            positions[
+                                "positions"][
+                                    aux_position][
+                                        "y"].as<float>(),
+                            positions[
+                                "positions"][
+                                    aux_position][
+                                        "orientation"].as<float>()
+                        )
+                    );
+                }
+            }
 
             current_ = pick_sequence_.begin();
 
@@ -165,6 +218,24 @@ class NavigationNode : public rclcpp::Node
         std::vector<std::array<double, 3>> goals_;
         size_t goal_index_ = 0;
         bool goal_active_ = false;
+        
+        float last_x_ = 0.0;
+        
+        std::map<std::pair<float, float>, std::vector<std::string>> transition_positions_ = 
+        {
+            // From start to rack 1
+            {{0.000, 1.250}, {"rack1start"}},
+            // From start to rack 2
+            {{0.000, 1.750}, {"rack2start"}},
+            {{0.000, 2.250}, {"rack3start"}}, // From start to rack 3
+            {{0.000, 4.000}, {"end"}}, // From start to end
+            {{1.250, 1.750}, {"rack1end", "rack2start"}}, // From rack 1 to rack 2
+            {{1.250, 2.250}, {"rack1end", "rack2start", "rack2end", "rack3start"}}, // From rack 1 to rack 3
+            {{1.250, 4.000}, {"rack1end", "end"}}, // From rack 1 to end
+            {{1.750, 2.250}, {"rack2end", "rack3start"}}, // From rack 2 to rack 3
+            {{1.750, 4.000}, {"rack2end", "end"}}, // From rack 2 to end
+            {{2.250, 4.000}, {"rack3end", "end"}} // From rack 3 to end
+        };
 
         /// Functions
 

@@ -11,6 +11,11 @@ positions:
     orientation: 0.00
 
   # Rack pivot positions
+  rack1start:
+    x: 1.250
+    y: 0.900
+    orientation: -1.57
+    
   rack1end:
     x: 1.250
     y: -0.900
