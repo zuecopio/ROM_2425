@@ -7,6 +7,7 @@
 - [Descripción](#-descripción)
 - [Objetivos](#-objetivos)
 - [Requisitos](#-requisitos)
+    - [¿Cómo instalar CoppeliaSim?](#%EF%B8%8F-cómo-instalar-coppeliasim)
 - [¿Cómo ejecutar el programa?](##-cómo-ejecutar-el-programa)
 - [Conclusiones](#-conclusiones)
 - [Trabajo a futuro](#-trabajo-a-futuro)
