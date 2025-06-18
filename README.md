@@ -4,14 +4,14 @@
 
 ## Índice
 
-- [Descripción](#descripcion)
-- [Objetivos](#objetivos)
-- [Requisitos](#requisitos)
-- [¿Cómo ejecutar el programa?](#como-ejecutar-el-programa)
-- [Conclusiones](#conclusiones)
-- [Trabajo a futuro](#trabajo-a-futuro)
-- [Licencia](#licencia)
-- [Agradecimientos](#agradecimientos)
+- [Descripción](#-descripción)
+- [Objetivos](#-objetivos)
+- [Requisitos](#-requisitos)
+- [¿Cómo ejecutar el programa?](##-cómo-ejecutar-el-programa)
+- [Conclusiones](#-conclusiones)
+- [Trabajo a futuro](#-trabajo-a-futuro)
+- [Licencia](#-licencia)
+- [Agradecimientos](#-agradecimientos)
 
 ## 📋 Descripción
 
