@@ -62,9 +62,7 @@ export PATH=$PATH:/home/USER/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ub
 
 ### 🔍 Paso 1. Cartografiar en escenario
 
-![image caption](media/cartographer.gif)
-
-#### 🧭 Terminal 1 - Lanzar cartografia:
+#### 🧭 Terminal 1 - Lanzar escenario de cartografia con CoppeliaSim:
 
 ```bash
 ros2 launch little_warehouse cartographer.launch.py resolution:=0.001
@@ -75,6 +73,8 @@ ros2 launch little_warehouse cartographer.launch.py resolution:=0.001
 ```bash
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
+
+![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación."](media/cartographer.png)
 
 #### 🗺️ Terminal 3 - Guardar el mapa (.pgm):
 
