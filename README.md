@@ -28,35 +28,47 @@ El robot será capaz de:
 Para instalar CoppeliaSim, sigue estos pasos:
 
 ```bash
-cd /home/USER/non-snap/CoppeliaSim
-wget https://downloads.coppeliarobotics.com/V4_9_0_rev6/CoppeliaSim_Edu_V4_9_0_\
-rev6_Ubuntu22_04.tar.xz
+cd ~
+wget https://downloads.coppeliarobotics.com/V4_9_0_rev6/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04.tar.xz
 tar -xvf CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04.tar.xz
 rm CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04.tar.xz
+echo "export PATH=$PATH:~/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04" >> ~/.bashrc
 ```
 
-### ⚙️ Añadir en el .bashrc
+### ⚙️ Configuración del entorno de ROS 2
 
-Añade las siguientes líneas a tu archivo `.bashrc` para configurar el entorno:
+Para configurar el entorno de ROS 2, añade las siguientes líneas a tu archivo `~/.bashrc` desde la terminal:
 
-```sh
-# >>> ROS 2 Humble >>>
-
-export ROS_DOMAIN_ID=0
-export ROS_LOCALHOST_ONLY=1
-source /opt/ros/humble/setup.bash
-source /home/USER/.../ROM_2425/ros2_ws/install/setup.bash
-export TURTLEBOT3_MODEL=burger
-export LDS_MODEL=LDS-02 # puede que esto sobregit push
-
-# <<< ROS 2 Humble <<<
-
-# >>> CoppeliaSim >>>
-
-export PATH=$PATH:/home/USER/non-snap/CoppeliaSim/CoppeliaSim_Edu_V4_9_0_rev6_Ubuntu22_04/
-
-# <<< CoppeliaSim <<<
+```bash
+echo "export ROS_DOMAIN_ID=0" >> ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+echo "export LDS_MODEL=LDS-02" >> ~/.bashrc
 ```
+
+### 👩‍💻 Clonar repositorio `https://github.com/zuecopio/ROM_2425` y compilar el paquete
+
+Para clonar el repositorio y compilar el paquete, sigue estos pasos:
+
+1. Clona el repositorio en una carpeta conocida:
+
+    ```bash
+    cd ~
+    git clone https://github.com/zuecopio/ROM_2425
+    ```
+
+2. Compila el paquete:
+
+    ```bash
+    cd ROM_2425/ros2_ws
+    colcon build
+    ```
+
+3. Configura el entorno para el paquete compilado, para hacer este valor permanente lo ponemos en el `.bashrc`:
+
+    ```bash
+    echo "source ~/ROM_2425/ros2_ws/install/setup.bash" >> ~/.bashrc
+    ```
 
 ## 🚀 ¿Cómo ejecutar el programa?
 
@@ -81,7 +93,7 @@ ros2 run turtlebot3_teleop teleop_keyboard
 #### 🗺️ Terminal 3 - Guardar el mapa (.pgm):
 
 ```bash
-ros2 run nav2_map_server map_saver_cli -f ./little_warehouse_map
+ros2 run nav2_map_server map_saver_cli -f ~/ROM_2425/ros2_ws/src/little_warehouse/maps/coppeliasim_map
 ```
 
 ### 🧠 Paso 2. Ejecutar programa principal
@@ -94,23 +106,28 @@ Asegúrate de cerrar todos los procesos anteriores.
 ros2 launch little_warehouse coppeliasim_no_rviz2.launch.py
 ```
 
-*Captura de pantalla*
+![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
+
+> A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.
+
 
 #### 🛑 Terminal 2 - Limitador de velocidad:
 
 ```bash
+cd ~/ROM_2425/ros2_ws/src/little_warehouse  # importante situarse en esta carpeta
 ros2 launch little_warehouse speed_limit.launch.py params_file:=./params/speed_params.yaml mask:=./maps/speed_mask_coppeliasim_map.yaml
 ```
-
-*Captura de pantalla*
 
 #### 🧭 Terminal 3 - Navegación:
 
 ```bash
+cd ~/ROM_2425/ros2_ws/src/little_warehouse # importante situarse en esta carpeta
 ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/coppeliasim_map.yaml params_file:=./params/nav2_params_speed_limit.yaml
 ```
 
-*Captura de pantalla*
+![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
+
+> A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.
 
 #### 📦 Terminal 4 - Enviar orden de envío:
 
@@ -124,9 +141,11 @@ Otra forma de lanzar este nodo es especificando qué orden se quiere realizar:
 ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 ```
 
-🗓️ El argumento order puede ser: "monday, tuesday, wednesday, thursday, friday, saturday, sunday".
+🗓️ El argumento order puede ser: `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday` o `sunday`.
 
-*Captura de pantalla*
+![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
+
+> A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.
 
 ## 📌 Conclusiones
 
@@ -145,7 +164,7 @@ ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 ## 📄 Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. 
-Consulta el archivo LICENSE 📜 para más información.
+Consulta el archivo `LICENSE` 📜 para más información.
 
 ## 🙏 Agradecimientos
 
