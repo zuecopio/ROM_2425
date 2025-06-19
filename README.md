@@ -1,6 +1,6 @@
 # 🤖 Proyecto de Robótica Móvil
 
-![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
+![Imagen de ejemplo del proyecto.](media/main.png)
 
 ## Índice
 
@@ -181,9 +181,9 @@ ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 
 🗓️ El argumento `order` puede ser uno de los siguientes: `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday` o `sunday`.
 
-![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
+![Publicación de las posiciones para completar el pedido.](media/navigation_node.png)
 
-> A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.
+> Publicación de las posiciones para completar el pedido.
 
 ## 📌 Conclusiones
 
