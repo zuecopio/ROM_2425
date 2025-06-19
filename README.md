@@ -140,7 +140,7 @@ Asegúrate de cerrar todos los procesos anteriores.
 ros2 launch little_warehouse coppeliasim_no_rviz2.launch.py
 ```
 
-![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/coppeliasim_scene.png)
+![Escenario en CoppeliaSim.](media/coppeliasim_scene.png)
 
 > Escenario en CoppeliaSim.
 
@@ -161,7 +161,7 @@ cd ~/ROM_2425/ros2_ws/src/little_warehouse # importante situarse en esta carpeta
 ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/coppeliasim_map.yaml params_file:=./params/nav2_params_speed_limit.yaml
 ```
 
-![Interfaz en RViz2 para la navegación.](media/rviz2-navegation.png)
+![Interfaz en RViz2 para la navegación.](media/rviz2_navegation.png)
 
 > Interfaz en RViz2 para la navegación.
 
@@ -202,6 +202,12 @@ monday:
   - raspberry
   - watermelon
 ```
+
+#### 🏁 Resultados finales
+
+| Escenario en CoppeliaSim | Interfaz en RViz2 para la navegación |
+|------------------------------|------------------------------|
+| ![Escenario en CoppeliaSim.](media/coppeliasim_scene_final.png) | ![Interfaz en RViz2 para la navegación.](media/rviz2_navegation_final.png) |
 
 ## 📌 Conclusiones
 
