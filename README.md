@@ -119,8 +119,8 @@ ros2 run nav2_map_server map_saver_cli -f ~/ROM_2425/ros2_ws/src/little_warehous
 Esto genera en la carpeta de `maps` un fichero `coppeliasim_map.yaml` y una imagen `coppeliasim_map.pgm`.
 
 |   Imagen original del mapa   |    Imagen del mapa retocado con GIMP   |
-|---------------------|------------------------|
-|          ![image caption](./media/coppeliasim_map_improved.png)           |            ![image caption](./media/speed_mask_coppeliasim_map.png)            |
+|------------------------------|----------------------------------------|
+| ![Imagen original del mapa](./media/coppeliasim_map.png) | ![Imagen del mapa retocado con GIMP](./media/coppeliasim_map_improved.png) |
 
 
 ### 🧠 Paso 2. Ejecutar programa principal
