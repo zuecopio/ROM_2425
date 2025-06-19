@@ -1,0 +1,60 @@
+orders:
+  monday:
+    - apple
+    - blueberry
+    - cherry
+    - mango
+    - melon
+    - nectarine
+    - papaya
+    - peach
+    - raspberry
+    - watermelon
+
+  tuesday:
+    - avocado
+    - banana
+    - durian
+    - grapefruit
+    - kiwi
+    - lime
+    - mandarin
+    - orange
+    - pear
+    - pommelo
+
+  wednesday:
+    - banana
+    - cherry
+    - kiwi
+    - lemon
+    - mamoncillo
+    - pineapple
+    - pommelo
+    - strawberry
+    - tangerine
+    - watermelon
+
+  thursday:
+    - apple
+    - avocado
+    - blueberry
+    - durian
+    - grape
+    - mango
+    - nectarine
+    - peach
+    - persimmon
+    - raspberry
+
+  friday:
+    - banana
+    - cherry
+    - grapefruit
+    - kiwi
+    - lemon
+    - mandarin
+    - melon
+    - orange
+    - papaya
+    - pear
