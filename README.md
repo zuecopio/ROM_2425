@@ -185,6 +185,24 @@ ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 
 > Publicación de las posiciones para completar el pedido.
 
+El contenido de las órdenes incluye diversos elementos que están distribuidos en las estanterías. Cada orden tiene una lista de componentes que se puede consultar en el archivo `orders.yaml`. El robot puede localizar los elementos gracias al fichero `positions.yaml`, que define para cada elemento una posición de pick para el robot.
+
+Por ejemplo, la orden `monday` contiene los siguientes elementos:
+
+```yaml
+monday:
+  - apple
+  - blueberry
+  - cherry
+  - mango
+  - melon
+  - nectarine
+  - papaya
+  - peach
+  - raspberry
+  - watermelon
+```
+
 ## 📌 Conclusiones
 
 - ✅ Se ha logrado implementar un sistema completo de navegación autónoma en un entorno simulado, integrando ROS 2 y CoppeliaSim.
