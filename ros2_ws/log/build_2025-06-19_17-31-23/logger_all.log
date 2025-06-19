@@ -1,0 +1,144 @@
+[0.195s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.195s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d0251256e00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d02512568f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d02512568f0>>, mixin_verb=('build',))
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.444s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/little_warehouse) by extension 'ros'
+[0.460s] DEBUG:colcon.colcon_core.package_identification:Package 'src/little_warehouse' with type 'ros.ament_cmake' and name 'little_warehouse'
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.499s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.499s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.502s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install
+[0.502s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/marcos/Documents/UPV/GIIROB/G3/ROM/larmestoGitHub/RM_prac/install
+[0.504s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 406 installed packages in /opt/ros/humble
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.552s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'cmake_target' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'cmake_clean_cache' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'cmake_clean_first' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'cmake_force_configure' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'ament_cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'catkin_cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'little_warehouse' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.553s] DEBUG:colcon.colcon_core.verb:Building package 'little_warehouse' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse', 'merge_install': False, 'path': '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse', 'symlink_install': False, 'test_result_base': None}
+[0.553s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.554s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.554s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse' with build type 'ament_cmake'
+[0.554s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse'
+[0.560s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.560s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.560s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse -DCMAKE_INSTALL_PREFIX=/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse
+[2.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/src/little_warehouse -DCMAKE_INSTALL_PREFIX=/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse
+[2.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse -- -j12 -l12
+[7.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse -- -j12 -l12
+[7.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse
+[7.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(little_warehouse)
+[7.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marcos/Documents/UPV/GIIROB/G3/RIN/ros2_ws/install/my_ros2_arduino_bridge:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/build/little_warehouse
+[7.663s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse' for CMake module files
+[7.663s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse' for CMake config files
+[7.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('little_warehouse', 'cmake_prefix_path')
+[7.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/hook/cmake_prefix_path.ps1'
+[7.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/hook/cmake_prefix_path.dsv'
+[7.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/hook/cmake_prefix_path.sh'
+[7.666s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib'
+[7.666s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/bin'
+[7.666s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/pkgconfig/little_warehouse.pc'
+[7.666s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/python3.10/site-packages'
+[7.667s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/bin'
+[7.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.ps1'
+[7.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.dsv'
+[7.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.sh'
+[7.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.bash'
+[7.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.zsh'
+[7.672s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/colcon-core/packages/little_warehouse)
+[7.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(little_warehouse)
+[7.673s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse' for CMake module files
+[7.674s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse' for CMake config files
+[7.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('little_warehouse', 'cmake_prefix_path')
+[7.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/hook/cmake_prefix_path.ps1'
+[7.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/hook/cmake_prefix_path.dsv'
+[7.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/hook/cmake_prefix_path.sh'
+[7.675s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib'
+[7.675s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/bin'
+[7.675s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/pkgconfig/little_warehouse.pc'
+[7.676s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/lib/python3.10/site-packages'
+[7.676s] Level 1:colcon.colcon_core.environment:checking '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/bin'
+[7.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.ps1'
+[7.677s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.dsv'
+[7.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.sh'
+[7.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.bash'
+[7.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/little_warehouse/package.zsh'
+[7.678s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/little_warehouse/share/colcon-core/packages/little_warehouse)
+[7.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.679s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.679s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.679s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.685s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.686s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.686s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.702s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.702s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/local_setup.ps1'
+[7.704s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/_local_setup_util_ps1.py'
+[7.706s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/setup.ps1'
+[7.709s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/local_setup.sh'
+[7.710s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/_local_setup_util_sh.py'
+[7.711s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/setup.sh'
+[7.712s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/local_setup.bash'
+[7.713s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/setup.bash'
+[7.714s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/local_setup.zsh'
+[7.715s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marcos/Documents/UPV/GIIROB/G3/ROM/myGitHub/ROM_2425/ros2_ws/install/setup.zsh'

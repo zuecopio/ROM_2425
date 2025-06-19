@@ -118,10 +118,17 @@ ros2 run nav2_map_server map_saver_cli -f ~/ROM_2425/ros2_ws/src/little_warehous
 
 Esto genera en la carpeta de `maps` un fichero `coppeliasim_map.yaml` y una imagen `coppeliasim_map.pgm`.
 
+Es posible que el mapa no se genere de la manera esperada, pero se puede ajustar utilizando una aplicación como GIMP.
+
 |   Imagen original del mapa   |    Imagen del mapa retocado con GIMP   |
 |------------------------------|----------------------------------------|
 | ![Imagen original del mapa](./media/coppeliasim_map.png) | ![Imagen del mapa retocado con GIMP](./media/coppeliasim_map_improved.png) |
 
+Además, se pueden agregar zonas de limitación de velocidad pintando áreas con diferentes tonalidades de gris. Cuanto más oscuro sea el color, menor será la velocidad permitida; en cambio, cuanto más claro sea, la limitación de velocidad será menos estricta.
+
+|   Imagen del mapa con las limitaciones de velocidad   |
+|------------------------------|
+| ![Imagen del mapa con las limitaciones de velocidad](./media/speed_mask_coppeliasim_map.png) |
 
 ### 🧠 Paso 2. Ejecutar programa principal
 
@@ -139,6 +146,8 @@ ros2 launch little_warehouse coppeliasim_no_rviz2.launch.py
 
 
 #### 🛑 Terminal 2 - Limitador de velocidad:
+
+Esta terminal permanecerá a la espera de que se inicie el navegador con la [Terminal 3](#-terminal-3---navegación). Luego, finalizará su ejecución.
 
 ```bash
 cd ~/ROM_2425/ros2_ws/src/little_warehouse  # importante situarse en esta carpeta
@@ -158,17 +167,19 @@ ros2 launch little_warehouse navigation_with_speed_limit.launch.py map:=./maps/c
 
 #### 📦 Terminal 4 - Enviar orden de envío:
 
+Para iniciar la orden de un pedido, se ejecuta el nodo `navigation_node`. Si no se indica qué orden se desea lanzar, se utilizará, por defecto, la del lunes.
+
 ```bash
 ros2 run little_warehouse navigation_node
 ```
 
-Otra forma de lanzar este nodo es especificando qué orden se quiere realizar:
+También es posible lanzar este nodo especificando la orden que se quiere realizar:
 
 ```bash
 ros2 run little_warehouse navigation_node --ros-args -p order:="friday"
 ```
 
-🗓️ El argumento order puede ser: `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday` o `sunday`.
+🗓️ El argumento `order` puede ser uno de los siguientes: `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday` o `sunday`.
 
 ![A la derecha: escenario en CoppeliaSim; abajo a la izquierda: interfaz en RViz2; arriba a la izquierda: nodo de teleoperación.](media/cartographer.png)
 
