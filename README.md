@@ -64,7 +64,7 @@ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 echo "export LDS_MODEL=LDS-02" >> ~/.bashrc
 ```
 
-### 👩‍💻 Clonar repositorio `https://github.com/zuecopio/ROM_2425` y compilar el paquete
+### 👩‍💻 Clonar repositorio y compilar el paquete
 
 Para clonar el repositorio y compilar el paquete, sigue estos pasos:
 
@@ -110,9 +110,18 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 #### 🗺️ Terminal 3 - Guardar el mapa (.pgm):
 
+Una vez ya se ha realizado una exploración del escenario, se ejecuta el siguiente comando para guardar un mapa.
+
 ```bash
 ros2 run nav2_map_server map_saver_cli -f ~/ROM_2425/ros2_ws/src/little_warehouse/maps/coppeliasim_map
 ```
+
+Esto genera en la carpeta de `maps` un fichero `coppeliasim_map.yaml` y una imagen `coppeliasim_map.pgm`.
+
+|   Imagen original del mapa   |    Imagen del mapa retocado con GIMP   |
+|---------------------|------------------------|
+|          ![image caption](./media/coppeliasim_map_improved.png)           |            ![image caption](./media/speed_mask_coppeliasim_map.png)            |
+
 
 ### 🧠 Paso 2. Ejecutar programa principal
 
