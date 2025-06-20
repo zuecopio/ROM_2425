@@ -7,10 +7,10 @@
 - [Descripción](#-descripción)
 - [Objetivos](#-objetivos)
 - [Requisitos](#-requisitos)
-    - [¿Cómo instalar CoppeliaSim?](#-cómo-instalar-coppeliasim)
+    - [Instalación de CoppeliaSim](#-instalación-de-coppeliasim)
     - [Configuración del entorno de ROS 2](#-configuración-del-entorno-de-ros-2)
     - [Clonar repositorio y compilar el paquete](#-clonar-repositorio-y-compilar-el-paquete)
-- [¿Cómo ejecutar el programa?](##-cómo-ejecutar-el-programa)
+- [Ejecución del programa](#-ejecución-del-programa)
     - [Paso 1. Cartografiar en escenario](#-paso-1-cartografiar-en-escenario)
     - [Paso 2. Ejecutar programa principal](#-paso-2-ejecutar-programa-principal)
 - [Conclusiones](#-conclusiones)
@@ -41,7 +41,7 @@ El robot será capaz de:
 - 🤖 TurtleBot3
 - 🐧 Ubuntu 22.04
 
-### 🛠️ ¿Cómo instalar CoppeliaSim?
+### 🛠️ Instalación de CoppeliaSim
 
 Para instalar CoppeliaSim, sigue estos pasos:
 
@@ -88,7 +88,7 @@ Para clonar el repositorio y compilar el paquete, sigue estos pasos:
     echo "source ~/ROM_2425/ros2_ws/install/setup.bash" >> ~/.bashrc
     ```
 
-## 🚀 ¿Cómo ejecutar el programa?
+## 🚀 Ejecución del programa
 
 ### 🔍 Paso 1. Cartografiar en escenario
 
